@@ -4,26 +4,34 @@
 
 * Summary: An empty world generator
 * Dependency Plugins: n/a
-* PocketMine-MP version: 1.5 (API:1.12.0)
+* PocketMine-MP version: 1.6+php7 (API:2.0.0)
 * DependencyPlugins: -
 * OptionalPlugins: -
-* Categories: -
-* Plugin Access: -
-* WebSite: https://github.com/alejandroliu/pocketmine-plugins/tree/master/INDEV/EmptyWorld
+* Categories: World Generator
+* Plugin Access: World Editing
+* WebSite: https://github.com/alejandroliu/pocketmine-plugins/tree/master/EmptyWorld
 
 ## Overview
 
-<!-- //php: $v_forum_thread = "http://forums.pocketmine.net/threads/xxxxxxxxxxxxxxxx"; -->
+<!-- php: $v_forum_thread = "http://forums.pocketmine.net/plugins/emptyworld.1248/"; -->
 <!-- template: prologue.md -->
-<!-- Add the line: -->
-<!-- php: $v_forum_thread = "http://forums.pocketmine.net/threads/XXXX"; -->
 
+**DO NOT POST QUESTIONS/BUG-REPORTS/REQUESTS IN THE REVIEWS**
 
-**NOTE:**
-This documentation was last updated for version **1.0.0**.
+It is difficult to carry a conversation in the reviews.  If you
+have a question/bug-report/request please use the
+[Thread](http://forums.pocketmine.net/plugins/emptyworld.1248/) for
+that.  You are more likely to get a response and help that way.
+
+_NOTE:_
+
+This documentation was last updated for version **1.1.0**.
+
 Please go to
-[github](https://github.com/alejandroliu/pocketmine-plugins/tree/master/INDEV/EmptyWorld)
+[github](https://github.com/alejandroliu/pocketmine-plugins/tree/master/EmptyWorld)
 for the most up-to-date documentation.
+
+You can also download this plugin from this [page](https://github.com/alejandroliu/pocketmine-plugins/releases/tag/EmptyWorld-1.1.0).
 
 <!-- template-end -->
 
@@ -54,8 +62,21 @@ The following preset strings are recognized:
     bottom of the world.  It defaults to 0 (Air) which means that you
     fall to the void.
 
+## FAQ
+
+* Q: Where do you configure the preset line?
+* A: This can be done either through [ManyWorlds](http://forums.pocketmine.net/plugins/manyworlds.1042/)
+  or through **pocketmine.yml**
+  * If using [ManyWorlds](http://forums.pocketmine.net/plugins/manyworlds.1042/)
+    use the command:
+    * /mw create <world> [seed] [generator] **[preset]**
+  * If using **pocketmine.yml**, find the _worlds:_ section, use:
+    * generator: emptyworld:[preset]
+
 ## Changes
 
+* 1.1.0: Updated for API 2.0
+  - Fixes #64 (Reported by @thebigsmileXD)
 * 1.0.0: First release
 
 ## Copyright
