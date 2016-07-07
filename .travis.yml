@@ -1,0 +1,17 @@
+language: php
+php:
+- '7.0'
+script:
+- bash test
+sudo: required
+dist: trusty
+before_deploy:
+- php libcommon/mkplugin -o . .
+deploy:
+  provider: releases
+  file_glob: true
+  api_key:
+    secure: I93pVt6hX4xL380IVBNTTV2d184jZfrRyPdCRGy8dEADxryA2L4CPhSEXXMQc3dYzYIc5nzVjzUVYHUv4e1689kIIcwCimnRcH+O3bwC7dWZEF+Gsvuu9IfVnD/9xA8XxXEPzR+IYfnbLu3wp+3fPl2KQvnb5Of0iS8/xYbNay5dgBw16uTYWNJnd/GgNRrSWqyTcEgbKJ0i7/GqtzlncilLqNq4drSItassg9D1dNd3p3M6Si/LhG5dUHeekmtHHk5s0zwKvbCk444mS7IcYlLVMWb1nesrbuPmlDJ2fqDCRrjBjY6NkarckYa55XCyc1z9D2ZHwKOkDgr3P6srSsp6dfSc6phIJg3NzeSRGNj90Il65oWiJlW15LLxfAn6GRDjXA1S0NtIRLCI/WqbJ42LaY5H1W31Tsp+mNYmMvDaaQU8bKQlWJJojccHSr8dZ9KNWWbe4VUHXbQ6LVhBLttdEOPG0nyqnRDqAn63jtxKHssE3MXpTJxQ1maJreKzApmV3N3TkVQMukBBejUuKnWrWkfTcaVYTBpf4eOe6N8IKjuSKS7c+Q3SsZcccaJQMXWg7kNF51i1ydAF5tVCI3J/mDkkgt1p3KkvS20f9YNgIP+fAb8I2utwEI2I830pIrfzCJeQO8HwoRJ5DSlyxMNRpFlc+8yumEXAlMJg0us=
+  file: EmptyWorld_v*.phar
+  on:
+    repo: Muirfield/EmptyWorld
