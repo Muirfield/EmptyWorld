@@ -30,13 +30,13 @@ that.  You are more likely to get a response and help that way.
 
 _NOTE:_
 
-This documentation was last updated for version **1.1.0**.
+This documentation was last updated for version **1.1.1**.
 
 Please go to
 [github](https://github.com/Muirfield/EmptyWorld)
 for the most up-to-date documentation.
 
-You can also download this plugin from this [page](https://github.com/Muirfield/pocketmine-plugins/releases/tag/EmptyWorld-1.1.0).
+You can also download this plugin from this [page](https://github.com/Muirfield/pocketmine-plugins/releases/tag/EmptyWorld-1.1.1).
 
 
 <!-- template: license/gpl2.md -->
