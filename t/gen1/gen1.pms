@@ -1,0 +1,12 @@
+#
+# Create a test world
+#
+@ $ew = 'emptyworld'
+@ $generator = \pocketmine\level\generator\Generator::getGenerator($ew)
+@ if ($ew != \pocketmine\level\generator\Generator::getGeneratorName($generator)):
+  echo {RED}ERROR Finding World Generator: {AQUA}'.$ew.'
+  @ return
+@ endif
+
+@ $server->generateLevel("tst_w1",792,$generator,[]);
+
