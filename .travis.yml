@@ -6,7 +6,7 @@ script:
 sudo: required
 dist: trusty
 before_deploy:
-- php libcommon/mkplugin -o . .
+- php libcommon/mkplugin.php -o . .
 deploy:
   provider: releases
   file_glob: true
