@@ -3,6 +3,10 @@
 
 <!-- end-include -->
 <img id="emptyworld-icon.png" src="https://raw.githubusercontent.com/Muirfield/EmptyWorld/master/media/emptyworld-icon.png" style="width:64px;height:64px" width="64" height="64"/>
+<!-- meta: Categories = World Generators -->
+<!-- php: $v_forum_thread = "http://forums.pocketmine.net/plugins/emptyworld.1248/"; -->
+<!-- php: $copyright="2016"; -->
+<!-- php: $v_skip_lite_explanation = 1; -->
 <!-- template: header.md -->
 
 # EmptyWorld
@@ -11,15 +15,12 @@
 - PocketMine-MP API version: 2.0.0
 - DependencyPlugins: 
 - OptionalPlugins: 
-- Categories: N/A
+- Categories: World Generators 
 - WebSite: https://github.com/Muirfield/EmptyWorld
 
 
 <!-- end-include -->
 
-<!-- php: $v_forum_thread = "http://forums.pocketmine.net/plugins/emptyworld.1248/"; -->
-<!-- php: $copyright="2016"; -->
-<!-- php: $v_skip_lite_explanation = 1; -->
 <!-- template: prologue.md -->
 **DO NOT POST QUESTIONS/BUG-REPORTS/REQUESTS IN THE REVIEWS**
 
@@ -38,18 +39,13 @@ You can also download this plugin from this [page](https://github.com/Muirfield/
 
 When clonning this repository make sure you use the `--recursive` option:
 
-```bash
-git clone --recursive https://github.com/Muirfield/EmptyWorld.git
-```
+    git clone --recursive https://github.com/Muirfield/EmptyWorld.git
     
 Otherwise you need to initialize sub-modules manually:
 
-
-```bash
-git clone https://github.com/Muirfield/EmptyWorld.git
-cd EmptyWorld
-git submodule update --init --recursive
-```
+    git clone https://github.com/Muirfield/EmptyWorld.git
+    cd EmptyWorld
+    git submodule update --init --recursive
 
 
 
