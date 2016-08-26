@@ -18,7 +18,8 @@
 <!-- end-include -->
 
 <!-- php: $v_forum_thread = "http://forums.pocketmine.net/plugins/emptyworld.1248/"; -->
-<!-- php:$copyright="2016"; -->
+<!-- php: $copyright="2016"; -->
+<!-- php: $v_skip_lite_explanation = 1; -->
 <!-- template: prologue.md -->
 **DO NOT POST QUESTIONS/BUG-REPORTS/REQUESTS IN THE REVIEWS**
 
@@ -27,25 +28,29 @@ have a question/bug-report/request please use the
 [Thread](http://forums.pocketmine.net/plugins/emptyworld.1248/) for
 that.  You are more likely to get a response and help that way.
 
-_NOTE:_
-
-This documentation was last updated for version **1.1.1**.
+_NOTE:_ This documentation was last updated for version **1.1.1**.
 
 Please go to
 [github](https://github.com/Muirfield/EmptyWorld)
 for the most up-to-date documentation.
 
-You can also download this plugin from this [page](https://github.com/Muirfield/EmptyWorld/releases)
+You can also download this plugin from this [page](https://github.com/Muirfield/EmptyWorld/releases).
 
-When clonning this repository make sure you use the --recursive option:
+When clonning this repository make sure you use the `--recursive` option:
 
-    git clone --recusive https://github.com/Muirfield/EmptyWorld.git
+```bash
+git clone --recursive https://github.com/Muirfield/EmptyWorld.git
+```
     
 Otherwise you need to initialize sub-modules manually:
 
-    git clone https://github.com/Muirfield/EmptyWorld.git
-    cd EmptyWorld
-    git submodule update --init --recursive
+
+```bash
+git clone https://github.com/Muirfield/EmptyWorld.git
+cd EmptyWorld
+git submodule update --init --recursive
+```
+
 
 
 
